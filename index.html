@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./index.js"></script>
+    <div class="container">
+        <div class="input-div">
+            <form>
+                <input type="text" placeholder="Enter Regex" id='input-regex'>
+            </form>
+            <button onclick="generate()" id='input-button'>Generate</button>
+        </div>
+        <div class="generate-div">
+            <h2>Expanded Expressions Based on The Given Regular Expressions</h2>
+            <div class="table-div">
+                <table class="sample-table">
+                    <tr>
+                        <th></th>
+                        <th>Sample</th>
+                    </tr>
+                    <tr>
+                        <td><p>Sample 1</p></td>
+                        <td><p id='example1'></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>Sample 2</p></td>
+                        <td><p id='example2'></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>Sample 3</p></td>
+                        <td><p id='example3'></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>Sample 4</p></td>
+                        <td><p id='example4'></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>Sample 5</p></td>
+                        <td><p id='example5'></p></td>
+                    </tr>
+                </table> 
+            </div>
+        </div>
+        <div class="notation-div">
+            <p><span style="text-decoration: underline;">Available Notations</span>
+                <span style="font-size: 14px;color: brown; font-style: italic;">(Incorrect form of regular expression will result in "null")</span>
+            </p>
+            <p>* is for zero or more</p>
+            <p>+ is for one or more</p>
+            <p>? is for zero or one</p>
+            <p>| is for (or) operation</p>
+            
+        </div>
+    </div>
+</body>
+</html>
